@@ -1,7 +1,7 @@
 # from collections import deq
 # class Queue:
 #     def __init__(self):
-list = []
+list = [ ]
 class Queue:
     def __init__(self):
         self.data = None
@@ -10,7 +10,6 @@ class Queue:
         list.insert(0,data)
     def is_empty(self):
         return len(list) == 0
-    
     def dequeue(self):
         if not self.is_empty():
             list.pop()
