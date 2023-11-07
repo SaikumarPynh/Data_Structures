@@ -1,5 +1,4 @@
 def mergesort(list):
-    
     if len(list) > 1:
         mid = len(list) // 2
         left_list = list[ :mid]
@@ -7,9 +6,9 @@ def mergesort(list):
         #for deviding the list upto a single element for a list
         mergesort(left_list)
         mergesort(right_list)
-        i = 0
-        j = 0
-        k = 0
+        i = 0 #for index of left list
+        j = 0#for index of right list
+        k = 0#for index of new list here new list is the initially taken list the is list
         while i < len(left_list) and j < len(right_list):
             if left_list[i] < right_list[j]:
                 list[k] = left_list[i]
@@ -29,10 +28,6 @@ def mergesort(list):
             list[k] = right_list[j]
             k = k + 1
             j = j + 1
-
-
-
-
 #driver code
 n = int(input("enter the length of the list:"))
 list = [int(input()) for i in range(n)]
