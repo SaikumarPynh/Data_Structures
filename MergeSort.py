@@ -10,6 +10,9 @@ def mergesort(list):
         j = 0#for index of right list
         k = 0#for index of new list here new list is the initially taken list the is list
         while i < len(left_list) and j < len(right_list):
+            # suppose list1 = [2,4,6] and list2 = [1,10,15] are sorted list when merging these two
+            # 1st ele of list1 is comp with 1st ele of list2 since sorted lists if ele is lesser
+            # # then it is the small it has to be put into the final list
             if left_list[i] < right_list[j]:
                 list[k] = left_list[i]
                 k = k + 1

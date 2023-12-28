@@ -14,7 +14,7 @@ class Stack:
 
         else:
             new = Node(data)
-            new.next = self.top
+            self.top.next = new
             self.top = new
         
     def pop(self):

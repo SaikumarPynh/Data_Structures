@@ -15,7 +15,10 @@ def binarysearch(arr,i,j,x):
     
 
 
-arr = [2,5,2,2,6,8,9,3]
+Arr = [2,5,2,2,6,8,9,3]
+arr = set(Arr)
+arr = sorted(arr)
+print(arr)
 key = int(input("enter the element to be search:"))
 result = binarysearch(arr,0,len(arr)-1,key)
 print(result)
